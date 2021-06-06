@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Home"
+    android:background="#59AACF">
+
+    <Button
+        android:id="@+id/btn_quiz"
+        android:layout_width="327dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="97dp"
+        android:gravity="center"
+        android:onClick="goToQuiz"
+
+        android:orientation="horizontal"
+        android:text="QUIZ"
+        android:textStyle="bold|italic"
+        android:textColor="#EADD68"
+        android:backgroundTint="#831F1F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_learn" />
+
+    <Button
+        android:id="@+id/btn_learn"
+        android:layout_width="327dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="317dp"
+        android:layout_marginBottom="61dp"
+        android:gravity="center"
+        android:onClick="goToLearn"
+        android:orientation="horizontal"
+        android:text="LEARN"
+        android:textStyle="bold|italic"
+        android:textColor="#EADD68"
+        android:backgroundTint="#831F1F"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="289dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_learn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/learn_english_word"
+        android:background="#1E4A20"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

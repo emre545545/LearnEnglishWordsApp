@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59AACF"
+    tools:context=".view.Quiz">
+
+    <Button
+        android:id="@+id/btn_quiz_adjective_quiz"
+        android:layout_width="271dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#831F1F"
+        android:gravity="center"
+        android:onClick="makeQuizAdjective"
+        android:orientation="horizontal"
+        android:text="QUIZ ADJECTIVE"
+        android:textColor="#EADD68"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quiz_adverb_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_quiz_verb_quiz" />
+
+    <Button
+        android:id="@+id/btn_quiz_adverb_quiz"
+        android:layout_width="271dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#831F1F"
+        android:gravity="center"
+        android:onClick="makeQuizAdverb"
+        android:orientation="horizontal"
+        android:text="QUIZ ADVERB"
+        android:textColor="#EADD68"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quiz_idiom_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_quiz_adjective_quiz" />
+
+    <Button
+        android:id="@+id/btn_quiz_idiom_quiz"
+        android:layout_width="267dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#831F1F"
+        android:gravity="center"
+        android:onClick="makeQuizIdiom"
+        android:orientation="horizontal"
+        android:text="QUIZ IDIOM AND PHRASEL"
+        android:textColor="#EADD68"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quiz_own_list_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_quiz_adverb_quiz" />
+
+    <Button
+        android:id="@+id/btn_quiz_verb_quiz"
+        android:layout_width="271dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#831F1F"
+        android:gravity="center"
+        android:onClick="makeQuizVerb"
+        android:orientation="horizontal"
+        android:text="QUIZ VERB"
+        android:textColor="#EADD68"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quiz_adjective_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_quiz_own_list_quiz"
+        android:layout_width="271dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#831F1F"
+        android:gravity="center"
+        android:onClick="makeQuizOwn"
+        android:orientation="horizontal"
+        android:text="QUIZ OWN LIST"
+        android:textColor="#EADD68"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_quiz_idiom_quiz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

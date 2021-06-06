@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sefir.learnenglishwords">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Learn English Words"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LearnEnglishWords">
+        <activity android:name=".view.AddWord"></activity>
+
+        <service
+            android:name=".service.NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".service.NotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".view.Quiz"
+                  android:label="Quiz"/>
+        <activity
+            android:name=".view.Learn"
+            android:label="@string/title_activity_learn" />
+        <activity android:name=".view.ShowOneOwnWord" />
+        <activity android:name=".view.OwnWordList" />
+        <activity android:name=".view.QuizQuestion" />
+        <activity android:name=".view.ShowWord" />
+        <activity android:name=".view.Home" android:label="Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
